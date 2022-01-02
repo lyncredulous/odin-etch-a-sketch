@@ -6,6 +6,7 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,8 +18,10 @@
 .grid {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(16, 3vw);
-    grid-template-rows: repeat(16, 3vw);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    height: 50rem;
+    width: 50rem;
 }
 
 .square {
@@ -27,4 +30,17 @@
 
 .hovered {
     background-color: black;
+}
+
+.btn {
+    background-color: deepSkyBlue;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: large;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
