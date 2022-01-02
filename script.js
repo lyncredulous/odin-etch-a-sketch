@@ -1,5 +1,5 @@
 function main() {
-  const grid = document.querySelector(".container");
+  const grid = document.querySelector(".grid");
   createGrid(grid, 16, 16);
   isHovered();
 }
