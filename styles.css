@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(16, 3vw);
+    grid-template-rows: repeat(16, 3vw);
+}
+
+.square {
+    box-shadow: 0 0 0 1px black;
+}
+
+.hovered {
+    background-color: black;
+}
